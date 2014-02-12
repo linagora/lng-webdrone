@@ -1,5 +1,17 @@
 body {
-     font-family: sans-serif;
+    padding-top: 70px;
+}
+#maincontrols {
+    margin-bottom: 10px;
+}
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by its height */
+    margin: 0 auto -150px;
+    /* Pad bottom by footer height + (optional) extra spacing */
+    padding: 0 0 170px;
 }
 #cam {
     margin: 0 auto;
@@ -8,20 +20,11 @@ body {
     border: 3px #050 solid;
     width: 640px;
     height: 360px;
+    margin-bottom: 10px;
 }
 #batteryProgress {
-	width: 640px;
-	margin: 0 auto;
+	width: 660px;
 	margin-bottom: 10px;
-}
-#stats {
-    position: absolute;
-    bottom: 20px; 
-    right: 20px;
-    font-size: 26px;
-}
-.buttons {
-    text-align: center;
 }
 .dropdown-menu {
     text-align: left;

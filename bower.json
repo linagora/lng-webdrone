@@ -1,0 +1,26 @@
+{
+  "name": "Linagora WebDrone",
+  "main": "server.js",
+  "version": "0.0.0",
+  "authors": [
+    "Linagora folks"
+  ],
+  "description": "Web Application for the AR-Drone v2",
+  "keywords": [
+    "drone",
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "bootstrap": "~3.0.3",
+    "font-awesome": "~4.0.3"
+  }
+}
