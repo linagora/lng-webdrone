@@ -1,12 +1,20 @@
+# LNG Drone
+
+Nodejs, ARDrone, VideoStream FTW.
+
 Getting started
 ======
 Connect to your ar drone 2 via WLAN, then run node.server.js open up localhost:3001 and you're ready to go.
 
-Use `W, A, S, D` to move front, back and sideways. Use your `cursors` to go up/down or turn clockwise/counter clockwise.
+Use `Z, S, Q, D` to move front, back and sideways. Use your `cursors` to go up/down or turn clockwise/counter clockwise.
 Some animations can be triggered with `1-4`
 `SPACE` for taking of and `esc` for landing.
 
-When you crash use `e` to recover from emergency mode.
+When you crash use `m` to recover from emergency mode.
+
+Figures are availble on Y U I O P. be careful on Y, it will flip the drone...
+
+
 
 This project is heavily inspired from https://github.com/usefulthink/nodecopter-monitor . I just removed the three.js part and ported it from socket.io to faye since I like that better.
 
