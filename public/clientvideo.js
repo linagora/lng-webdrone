@@ -7,7 +7,6 @@
   });
 
   faye.subscribe("/drone/navdata", function(data) {
-    console.log(data);
     ["batteryPercentage", "clockwiseDegrees", "altitudeMeters", "frontBackDegrees", "leftRightDegrees", "xVelocity", "yVelocity", "zVelocity"].forEach(function(type) {
       return $("#" + type).html(Math.round(data.demo[type], 4));
     });
@@ -17,10 +16,10 @@
   window.showBatteryStatus = function(batteryPercentage) {
     $("#batterybar").width("" + batteryPercentage + "%");
     if (batteryPercentage < 30) {
-      $("#batteryProgress").removeClass("progress-success").addClass("progress-warning");
+      $("#batterybar").removeClass("progress-bar-success").addClass("progress-bar-warning");
     }
     if (batteryPercentage < 15) {
-      $("#batteryProgress").removeClass("progress-warning").addClass("progress-danger");
+      $("#batterybar").removeClass("progress-bar-warning").addClass("progress-bar-danger");
     }
     return $("#batteryProgress").attr({
       "data-original-title": "Battery status: " + batteryPercentage + "%"
